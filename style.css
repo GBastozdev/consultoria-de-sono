@@ -1,0 +1,278 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #F5F1ED; /* bege clarinho */
+  color: #264653; /* verde escuro */
+  line-height: 1.6;
+  padding: 0px;
+  font-size: 18px;
+}
+
+/* ======= HEADER HERO ======= */
+.hero {
+  background: linear-gradient(135deg, #D17C5A, #264653);
+  color: #F5F1ED;
+  padding: 50px 20px;
+  border-radius: 0px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hero h1 {
+  font-size: 2.0rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.hero h2 {
+  font-weight: 500;
+  color: #F5F1EDCC;
+  margin-bottom: 15px;
+}
+
+/* ======= SEÇÃO "PARA QUEM É" ======= */
+.publico-alvo {
+  background-color: #F1E6DE; /* bege suave */
+  max-width: 700px;
+  margin: 0 auto 50px;
+  padding: 40px 50px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.publico-alvo h2 {
+  color: #D17C5A; /* terra cota */
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.publico-alvo ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.publico-alvo ul li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 0px;
+  font-size: 1.3rem;
+  color: #264653;
+}
+
+.publico-alvo ul li::before {
+  content: "✔️";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+/* ======= SEÇÃO "O QUE INCLUI" - Fundo terra cota ======= */
+.o-que-inclui {
+  background-color: #D17C5A; /* terra cota forte */
+  color: #F5F1ED; /* texto claro */
+  max-width: 800px;
+  margin: 0 auto 60px;
+  padding: 50px 50px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(209, 124, 90, 0.4);
+}
+
+.o-que-inclui .intro {
+  font-size: 1.7rem;
+  text-align: justify;
+  margin-bottom: 35px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+  color: #F5F1EDDD;
+}
+
+.o-que-inclui h2 {
+  font-size: 2rem;
+  margin-bottom: 35px;
+  font-weight: 700;
+  color: #F5F1ED;
+}
+
+.o-que-inclui ul {
+  list-style: none;
+  padding-left: 0;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.o-que-inclui li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: #F5F1ED;
+}
+
+.o-que-inclui li::before {
+  content: "✔️";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+/* ======= BOTÃO CTA ======= */
+.cta-button {
+  display: block;
+  max-width: 320px;
+  margin: 0 auto 20px;
+  background-color: #264653; /* verde escuro */
+  color: #F5F1ED;
+  font-weight: 700;
+  padding: 18px 0;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+  background-color: #1b2f33;
+  outline: none;
+}
+
+/* ======= DEPOIMENTOS ======= */
+.depoimentos {
+  max-width: 900px;
+  margin: 0 auto 0px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.depoimentos h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 35px;
+  font-weight: 700;
+}
+
+.depoimento-prints {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  -webkit-overflow-scrolling: touch;
+  align-items: flex-start; /* garante que as imagens alinhem pelo topo */
+}
+
+.depoimento-prints img {
+  height: 450px; /* altura fixa para uniformizar */
+  width: auto; /* largura proporcional */
+  border-radius: 15px;
+  object-fit: contain;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.depoimento-prints::-webkit-scrollbar {
+  height: 8px;
+}
+
+.depoimento-prints::-webkit-scrollbar-thumb {
+  background: #D17C5A;
+  border-radius: 4px;
+}
+
+.depoimento-prints img:hover {
+  transform: scale(1.05);
+}
+
+/* ======= QUEM É LARA ======= */
+.quem-e-lara {
+  background-color: #F1E6DE;
+  max-width: 900px;
+  margin: 0 auto 20px;
+  padding: 50px 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.quem-e-lara h2 {
+  font-size: 2.2rem;
+  color: #264653;
+  margin-bottom: 35px;
+  font-weight: 700;
+}
+
+.quem-e-lara .bio {
+  display: flex;
+  flex-direction: column; /* empilha tudo em coluna */
+  align-items: center;
+  text-align: center;
+  text-align: justify;
+}
+
+.quem-e-lara .foto-lara {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0px;
+  box-shadow: 0 4px 12px rgba(38, 70, 83, 0.15);
+}
+.quem-e-lara p {
+  flex: 1 1 400px;
+  font-size: 1.4rem;
+  color: #264653;
+  line-height: 1.8;
+}
+
+
+/* Responsivo: em telas pequenas, foto abaixo do texto */
+@media (max-width: 600px) {
+  .quem-e-lara .bio {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .quem-e-lara .foto-lara {
+    order: 0;
+    margin-top: 20px;
+  }
+}
+
+/* ======= FOOTER ======= */
+footer {
+  text-align: center;
+  margin-bottom: -20px;
+  font-size: 1rem;
+  color: white;
+  user-select: none;
+}
+
+.bonus{
+  font-size: 25px;
+  text-align: center;
+ 
+
+}
