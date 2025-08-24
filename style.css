@@ -25,7 +25,7 @@ body {
 .hero {
   background-color: var(--cor2);
   color: var(--cor4);
-  padding: 30px 10px 10px 10px;
+  padding: 30px 10px 0px 10px;
   text-align: center;} 
 
 .hero h1 {
@@ -137,7 +137,7 @@ body {
   display: block;
   max-width: 320px;
   margin-top: -40px;
-  background-color: blue; /* verde escuro */
+  background-color: #075e54; /* verde escuro */
   color: #F5F1ED;
   font-weight: 700;
   padding: 10px 0;
@@ -190,17 +190,17 @@ body {
 /* ======= QUEM É LARA ======= */
 .quem-e-lara {
   background-color: #F1E6DE;
-  max-width: 900px;
-  margin: 0 auto 20px;
+  max-width: 800px;
+  margin: 0 auto 60px;
   padding: 50px 20px;
   border-radius: 12px;
   text-align: center;
 }
 
 .quem-e-lara h2 {
-  font-size: 2.2rem;
+  font-size: 150%;
   color: #264653;
-  margin-bottom: 35px;
+  margin-bottom: auto;
   font-weight: 700;
 }
 
@@ -225,6 +225,7 @@ body {
   font-size: 1.4rem;
   color: #264653;
   line-height: 1.8;
+  text-align: justify;
 }
 
 
