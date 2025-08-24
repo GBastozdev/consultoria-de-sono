@@ -84,10 +84,10 @@ body {
   line-height: 1;
 }
 
-/* ======= SEÇÃO "O QUE INCLUI" - Fundo terra cota ======= */
+/* ======= SEÇÃO "O QUE INCLUI" ======= */
 .o-que-inclui {
-  background-color: var(--cor1); /* terra cota forte */
-  color: var(--cor2); /* texto claro */
+  background-color: var(--cor1);
+  color: var(--cor2); 
   max-width: 800px;
   margin: 0 auto 60px;
   padding: 20px;
@@ -132,11 +132,34 @@ body {
   line-height: 1;
 }
 
+.bonus{
+  font-size: 90%;
+  text-align: center;
+  padding: 0 15px;
+  max-width: 100%;
+  box-sizing: border-box;
+ word-wrap: break-word;
+ overflow-wrap: break-word;
+ hyphens: auto;
+ font-weight: bolder;
+
+}
+
+.bonus {
+  animation: piscaCor 1s infinite;
+}
+
+@keyframes piscaCor {
+  0%   { color: red; }
+  50%  { color: yellow; }
+  100% { color: red; }
+}
+
 /* ======= BOTÃO CTA ======= */
 .cta-button {
   display: block;
   max-width: 320px;
-  margin-top: -40px;
+  margin: -40px 0 0 0; 
   background-color: #075e54; /* verde escuro */
   color: #F5F1ED;
   font-weight: 700;
@@ -191,7 +214,7 @@ body {
 .quem-e-lara {
   background-color: #F1E6DE;
   max-width: 800px;
-  margin: 10px;
+  margin: 20px 10px 10px 10px;
   padding: 50px 20px;
   border-radius: 12px;
   text-align: center;
@@ -251,25 +274,3 @@ footer {
   user-select: none;
 }
 
-.bonus{
-  font-size: 90%;
-  text-align: center;
-  padding: 0 15px;
-  max-width: 100%;
-  box-sizing: border-box;
- word-wrap: break-word;
- overflow-wrap: break-word;
- hyphens: auto;
- font-weight: bolder;
-
-}
-
-.bonus {
-  animation: piscaCor 1s infinite;
-}
-
-@keyframes piscaCor {
-  0%   { color: red; }
-  50%  { color: yellow; }
-  100% { color: red; }
-}
