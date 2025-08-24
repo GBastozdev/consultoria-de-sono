@@ -159,7 +159,7 @@ body {
 .cta-button {
   display: block;
   max-width: 320px;
-  margin: -40px 0 0 0; 
+  margin-bottom: 20px;
   background-color: #075e54; /* verde escuro */
   color: #F5F1ED;
   font-weight: 700;
@@ -177,12 +177,76 @@ body {
   background-color: #1b2f33;
   outline: none; }
 
+  .cta-button1 {
+  display: block;
+  max-width: 320px;
+  margin-top: -40px;
+  background-color: #075e54; /* verde escuro */
+  color: #F5F1ED;
+  font-weight: 700;
+  padding: 10px 0;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button1:hover,
+.cta-button1:focus {
+  background-color: #1b2f33;
+  outline: none; }
+
+   .cta-button2 {
+  display: block;
+  max-width: 320px;
+  margin-top: 10px;
+  background-color: #075e54; /* verde escuro */
+  color: #F5F1ED;
+  font-weight: 700;
+  padding: 10px 0;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button2:hover,
+.cta-button2:focus {
+  background-color: #1b2f33;
+  outline: none; }
+
+   .cta-button3 {
+  display: block;
+  max-width: 320px;
+  margin: 15px 0 15px 0;
+  background-color: #075e54; /* verde escuro */
+  color: #F5F1ED;
+  font-weight: 700;
+  padding: 10px 0;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button3:hover,
+.cta-button3:focus {
+  background-color: #1b2f33;
+  outline: none; }
+
+
 /* ======= DEPOIMENTOS ======= */
 
 .depoimentos h2 {
   font-size: 100%;
   color: #ffffff;
-  margin: 20px 0 20px 0;
+  margin: 20px 0 0 0;
   font-weight: 700;}
 
 .depoimento-prints{
