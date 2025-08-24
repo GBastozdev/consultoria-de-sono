@@ -222,7 +222,7 @@ body {
    .cta-button3 {
   display: block;
   max-width: 320px;
-  margin: 15px 0 15px 0;
+  margin: 15px;
   background-color: #075e54; /* verde escuro */
   color: #F5F1ED;
   font-weight: 700;
