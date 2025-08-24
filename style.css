@@ -19,6 +19,7 @@ body {
   line-height: 1.6;
   padding: 0px;
   font-size: 18px;
+  background-color: var(--cor2);
 }
   
 /* ======= HEADER HERO ======= */
@@ -222,7 +223,7 @@ body {
    .cta-button3 {
   display: block;
   max-width: 320px;
-  margin: 15px;
+  margin-bottom: 10px;
   background-color: #075e54; /* verde escuro */
   color: #F5F1ED;
   font-weight: 700;
@@ -333,8 +334,9 @@ body {
 footer {
   text-align: center;
   margin-bottom: -20px;
-  font-size: 1rem;
+  font-size: 50%;
   color: white;
   user-select: none;
+  margin-bottom: 20px;
 }
 
