@@ -8,21 +8,20 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #F5F1ED; /* bege clarinho */
-  color: #264653; /* verde escuro */
+  color: #495b63; /* verde escuro */
   line-height: 1.6;
   padding: 0px;
-  font-size: 18px;
-}
-
+  font-size: 18px;}
+  
 /* ======= HEADER HERO ======= */
 .hero {
-  background: linear-gradient(135deg, #D17C5A, #264653);
-  color: #F5F1ED;
+ background-color: #264653;
+  color: #000000;
   padding: 50px 20px;
-  border-radius: 0px;
+  border-radius: 20px;
   text-align: center;
-  margin-bottom: 50px;
-}
+  margin:20px 
+}  
 
 .hero h1 {
   font-size: 2.0rem;
