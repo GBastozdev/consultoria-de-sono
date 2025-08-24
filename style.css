@@ -5,32 +5,42 @@
   box-sizing: border-box;
 }
 
+:root{
+  --cor1: #BC3908;
+  --cor2: #283618;
+  --cor3: #FA9F42;
+  --cor4: #FFEEF2;
+  --cor5:  #73A580;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #F5F1ED; /* bege clarinho */
   color: #495b63; /* verde escuro */
   line-height: 1.6;
   padding: 0px;
-  font-size: 18px;}
+  font-size: 18px;
+}
   
 /* ======= HEADER HERO ======= */
 .hero {
- background-color: #264653;
-  color: #000000;
+ background-color: var(--cor2);
+  color: var(--cor4);
   padding: 50px 20px;
   border-radius: 20px;
   text-align: center;
-  margin:20px 
-}  
+  margin:20px;
+} 
 
 .hero h1 {
-  font-size: 2.0rem;
+  font-size: 130%;
   font-weight: 700;
   margin-bottom: 15px;
   font-style: italic;
 }
 
 .hero h2 {
+  font-size: 120%;
   font-weight: 500;
   color: #F5F1EDCC;
   margin-bottom: 15px;
@@ -38,18 +48,18 @@ body {
 
 /* ======= SEÇÃO "PARA QUEM É" ======= */
 .publico-alvo {
-  background-color: #F1E6DE; /* bege suave */
+  background-color: #fdfdfd;
   max-width: 700px;
-  margin: 0 auto 50px;
-  padding: 40px 50px;
+  margin: 0 auto 70px;
+  padding: 20px;
   border-radius: 12px;
   text-align: center;
 }
 
 .publico-alvo h2 {
-  color: #D17C5A; /* terra cota */
-  font-size: 2rem;
-  margin-bottom: 30px;
+  color: var(--cor1);
+  font-size: 150%;
+  margin-bottom: 20px;
   font-weight: 700;
 }
 
@@ -57,15 +67,15 @@ body {
   list-style: none;
   padding-left: 0;
   text-align: left;
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 700px;
+  margin: auto;
 }
 
 .publico-alvo ul li {
   position: relative;
   padding-left: 30px;
   margin-bottom: 0px;
-  font-size: 1.3rem;
+  font-size: 100;
   color: #264653;
 }
 
@@ -80,8 +90,8 @@ body {
 
 /* ======= SEÇÃO "O QUE INCLUI" - Fundo terra cota ======= */
 .o-que-inclui {
-  background-color: #D17C5A; /* terra cota forte */
-  color: #F5F1ED; /* texto claro */
+  background-color: var(--cor1); /* terra cota forte */
+  color: var(--cor2); /* texto claro */
   max-width: 800px;
   margin: 0 auto 60px;
   padding: 50px 50px;
@@ -98,7 +108,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   line-height: 1.8;
-  color: #F5F1EDDD;
+  color: var(--cor4);
+  border: black;
 }
 
 .o-que-inclui h2 {
