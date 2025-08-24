@@ -1,7 +1,7 @@
 /* Reset básico */
 * {
-  margin: 0;
-  padding: 0;
+  margin: auto;
+  padding: auto;
   box-sizing: border-box;
 }
 
@@ -15,8 +15,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #F5F1ED; /* bege clarinho */
-  color: #495b63; /* verde escuro */
+  color: #495b63;
   line-height: 1.6;
   padding: 0px;
   font-size: 18px;
@@ -24,24 +23,21 @@ body {
   
 /* ======= HEADER HERO ======= */
 .hero {
- background-color: var(--cor2);
+  background-color: var(--cor2);
   color: var(--cor4);
-  padding: 50px 20px;
-  border-radius: 20px;
-  text-align: center;
-  margin:20px;
-} 
+  padding: 30px 10px 10px 10px;
+  text-align: center;} 
 
 .hero h1 {
-  font-size: 130%;
+  font-size: 115%;
   font-weight: 700;
   margin-bottom: 15px;
   font-style: italic;
 }
 
 .hero h2 {
-  font-size: 120%;
-  font-weight: 500;
+  font-size: 100%;
+  font-weight: 500px;
   color: #F5F1EDCC;
   margin-bottom: 15px;
 }
@@ -50,7 +46,7 @@ body {
 .publico-alvo {
   background-color: #fdfdfd;
   max-width: 700px;
-  margin: 0 auto 70px;
+  margin-bottom: 20px;
   padding: 20px;
   border-radius: 12px;
   text-align: center;
@@ -58,7 +54,7 @@ body {
 
 .publico-alvo h2 {
   color: var(--cor1);
-  font-size: 150%;
+  font-size: 100%;
   margin-bottom: 20px;
   font-weight: 700;
 }
@@ -75,7 +71,7 @@ body {
   position: relative;
   padding-left: 30px;
   margin-bottom: 0px;
-  font-size: 100;
+  font-size: 80%;
   color: #264653;
 }
 
@@ -94,27 +90,20 @@ body {
   color: var(--cor2); /* texto claro */
   max-width: 800px;
   margin: 0 auto 60px;
-  padding: 50px 50px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 6px 15px rgba(209, 124, 90, 0.4);
-}
+  padding: 20px;
+  border-radius: 12px;}
 
 .o-que-inclui .intro {
-  font-size: 1.7rem;
-  text-align: justify;
-  margin-bottom: 35px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.8;
   color: var(--cor4);
+  font-size: 100%;
+  text-align: justify;
+  line-height: 1.5;
   border: black;
 }
 
 .o-que-inclui h2 {
-  font-size: 2rem;
-  margin-bottom: 35px;
+  font-size: 120%;
+  margin: 10px 0 10px 0;
   font-weight: 700;
   color: #F5F1ED;
 }
@@ -123,15 +112,13 @@ body {
   list-style: none;
   padding-left: 0;
   max-width: 700px;
-  margin: 0 auto;
-  text-align: left;
-}
+  text-align: left;}
 
 .o-que-inclui li {
   position: relative;
   padding-left: 30px;
   margin-bottom: 20px;
-  font-size: 1.3rem;
+  font-size: 80%;
   line-height: 1.7;
   color: #F5F1ED;
 }
@@ -149,11 +136,11 @@ body {
 .cta-button {
   display: block;
   max-width: 320px;
-  margin: 0 auto 20px;
-  background-color: #264653; /* verde escuro */
+  margin-top: -40px;
+  background-color: blue; /* verde escuro */
   color: #F5F1ED;
   font-weight: 700;
-  padding: 18px 0;
+  padding: 10px 0;
   border-radius: 30px;
   font-size: 1.5rem;
   text-decoration: none;
@@ -165,58 +152,41 @@ body {
 .cta-button:hover,
 .cta-button:focus {
   background-color: #1b2f33;
-  outline: none;
-}
+  outline: none; }
 
 /* ======= DEPOIMENTOS ======= */
-.depoimentos {
-  max-width: 900px;
-  margin: 0 auto 0px;
-  padding: 0 20px;
-  text-align: center;
-}
 
 .depoimentos h2 {
-  font-size: 2rem;
+  font-size: 100%;
   color: #ffffff;
-  margin-bottom: 35px;
-  font-weight: 700;
-}
+  margin: 20px 0 20px 0;
+  font-weight: 700;}
 
-.depoimento-prints {
+.depoimento-prints{
   display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: nowrap;
+  gap: 20px;
   overflow-x: auto;
-  padding-bottom: 10px;
+  overflow-y: hidden;
+  padding: 20px 0;
+  scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  align-items: flex-start; /* garante que as imagens alinhem pelo topo */
 }
 
-.depoimento-prints img {
-  height: 450px; /* altura fixa para uniformizar */
-  width: auto; /* largura proporcional */
-  border-radius: 15px;
-  object-fit: contain;
-  flex-shrink: 0;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+.depoimentos img{
+  flex: 0 0 auto;
+  max-width: 100%;
+  max-height: 500px;
+  height: auto;
+  border-radius: 50px 10px 10px 50px;
+  padding-left: 15px;
+  transition: transform 0,3 ease;
 }
 
-.depoimento-prints::-webkit-scrollbar {
-  height: 8px;
-}
+.depoimento-prints:hover{
+  transform: scale(1.1);
+  z-index: 10;}
 
-.depoimento-prints::-webkit-scrollbar-thumb {
-  background: #D17C5A;
-  border-radius: 4px;
-}
-
-.depoimento-prints img:hover {
-  transform: scale(1.05);
-}
-
+  
 /* ======= QUEM É LARA ======= */
 .quem-e-lara {
   background-color: #F1E6DE;
@@ -281,8 +251,24 @@ footer {
 }
 
 .bonus{
-  font-size: 25px;
+  font-size: 90%;
   text-align: center;
- 
+  padding: 0 15px;
+  max-width: 100%;
+  box-sizing: border-box;
+ word-wrap: break-word;
+ overflow-wrap: break-word;
+ hyphens: auto;
+ font-weight: bolder;
 
+}
+
+.bonus {
+  animation: piscaCor 1s infinite;
+}
+
+@keyframes piscaCor {
+  0%   { color: red; }
+  50%  { color: yellow; }
+  100% { color: red; }
 }
