@@ -1,17 +1,18 @@
 /* Reset básico */
 * {
-  margin: auto;
+  margin:  auto;
   padding: auto;
   box-sizing: border-box;
 }
 
 :root{
-  --cor1: #BC3908;
-  --cor2: #283618;
-  --cor3: #FA9F42;
-  --cor4: #FFEEF2;
-  --cor5:  #73A580;
+  --cor1: #9E3A26;
+  --cor2: #663C1F;
+  --cor3: #E08543;
+  --cor4:#c08457;
+  --cor5:#FFEEF2;
 }
+
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -19,27 +20,33 @@ body {
   line-height: 1.6;
   padding: 0px;
   font-size: 18px;
-  background-color: var(--cor2);
+  background-image: url(imagens/6664.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
   
 /* ======= HEADER HERO ======= */
 .hero {
-  background-color: var(--cor2);
-  color: var(--cor4);
-  padding: 30px 10px 0px 10px;
-  text-align: center;} 
+  padding: 10px 15px;
+  text-align: center;
+  background-color: white;
+  margin: 10% 3%;
+  border-radius: 10px;
+}
 
 .hero h1 {
   font-size: 115%;
   font-weight: 700;
   margin-bottom: 15px;
   font-style: italic;
+  background-color: white;
+  border-radius: 10px;
 }
-
 .hero h2 {
   font-size: 100%;
   font-weight: 500px;
-  color: #F5F1EDCC;
+  color: #9E3A26;
   margin-bottom: 15px;
 }
 
@@ -47,9 +54,10 @@ body {
 .publico-alvo {
   background-color: #fdfdfd;
   max-width: 700px;
-  margin-bottom: 20px;
+  margin: 10% 3% 5%;
   padding: 20px;
-  border-radius: 12px;
+  border: 1px solid var(--cor1);
+  border-radius: 10px;
   text-align: center;
 }
 
@@ -70,9 +78,10 @@ body {
 
 .publico-alvo ul li {
   position: relative;
-  padding-left: 30px;
+  padding-left: 40px;
   margin-bottom: 0px;
   font-size: 80%;
+  font-style: italic;
   color: #264653;
 }
 
@@ -87,15 +96,18 @@ body {
 
 /* ======= SEÇÃO "O QUE INCLUI" ======= */
 .o-que-inclui {
-  background-color: var(--cor1);
-  color: var(--cor2); 
+  background-color:white;
+  color: var(--cor1); 
   max-width: 800px;
   margin: 0 auto 60px;
   padding: 20px;
-  border-radius: 12px;}
+  border-radius: 12px;
+  border: solid 1px var(--cor1);
+  margin: 5% 3% 15%;
+}
 
 .o-que-inclui .intro {
-  color: var(--cor4);
+  color: var(--cor1);
   font-size: 100%;
   text-align: justify;
   line-height: 1.5;
@@ -106,7 +118,8 @@ body {
   font-size: 120%;
   margin: 10px 0 10px 0;
   font-weight: 700;
-  color: #F5F1ED;
+  color: var(--cor1);
+  text-align: center;
 }
 
 .o-que-inclui ul {
@@ -117,11 +130,13 @@ body {
 
 .o-que-inclui li {
   position: relative;
-  padding-left: 30px;
+  padding-left: 40px;
   margin-bottom: 20px;
-  font-size: 80%;
+  font-size: 85%;
+  font-weight: 600;
+  font-style: italic;;
   line-height: 1.7;
-  color: #F5F1ED;
+  color: #264653;
 }
 
 .o-que-inclui li::before {
@@ -139,10 +154,13 @@ body {
   padding: 0 15px;
   max-width: 100%;
   box-sizing: border-box;
- word-wrap: break-word;
- overflow-wrap: break-word;
- hyphens: auto;
- font-weight: bolder;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  font-weight: bolder;
+}
+div img{
+  display: flex;
 
 }
 
@@ -151,9 +169,10 @@ body {
 }
 
 @keyframes piscaCor {
-  0%   { color: red; }
-  50%  { color: yellow; }
-  100% { color: red; }
+  0%   { color: var(--cor1); }
+  50%  { color: green; }
+  100% { color: blue; }
+
 }
 
 /* ======= BOTÃO CTA ======= */
@@ -246,9 +265,10 @@ body {
 
 .depoimentos h2 {
   font-size: 100%;
-  color: #ffffff;
+  color: var(--cor5);
   margin: 20px 0 0 0;
-  font-weight: 700;}
+  font-weight: 700;
+  text-align: center;}
 
 .depoimento-prints{
   display: flex;
@@ -261,10 +281,8 @@ body {
 }
 
 .depoimentos img{
-  flex: 0 0 auto;
   max-width: 100%;
   max-height: 500px;
-  height: auto;
   border-radius: 50px 10px 10px 50px;
   padding: 10px 10px 10px 10px;
   transition: transform 0,3 ease;
@@ -278,11 +296,12 @@ body {
 /* ======= QUEM É LARA ======= */
 .quem-e-lara {
   background-color: #F1E6DE;
-  max-width: 800px;
-  margin: 20px 10px 10px 10px;
-  padding: 50px 20px;
+  width: auto;
+  margin: 20px 10px 10px;
+  padding: 0 0 -100%;
   border-radius: 12px;
   text-align: center;
+  
 }
 
 .quem-e-lara h2 {
@@ -314,28 +333,16 @@ body {
   color: #264653;
   line-height: 1.8;
   text-align: justify;
+  padding: 0 5%;
 }
 
-
-/* Responsivo: em telas pequenas, foto abaixo do texto */
-@media (max-width: 600px) {
-  .quem-e-lara .bio {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .quem-e-lara .foto-lara {
-    order: 0;
-    margin-top: 20px;
-  }
-}
 
 /* ======= FOOTER ======= */
 footer {
   text-align: center;
   margin-bottom: -20px;
   font-size: 50%;
-  color: white;
+  color: black;
   user-select: none;
   margin-bottom: 20px;
 }
