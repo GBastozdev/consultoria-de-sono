@@ -55,7 +55,7 @@ body {
 /* ======= SEÇÃO "PARA QUEM É" ======= */
 .publico-alvo {
   background-color: #fdfdfd;
-  max-width: 700px;
+  width: auto;
   margin: 10% 3% 5%;
   padding: 20px;
   border: 1px solid var(--cor1);
@@ -100,7 +100,7 @@ body {
 .o-que-inclui {
   background-color:white;
   color: var(--cor1); 
-  max-width: 800px;
+  max-width: auto;
   margin: 0 auto 60px;
   padding: 20px;
   border-radius: 12px;
