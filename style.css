@@ -52,7 +52,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 20% 3px;
+    padding: 20% 0px;
+    margin: 0;
 
   }
 
@@ -70,7 +71,7 @@ body {
 
   .publico-alvo h2 {
     color: var(--cor1);
-    font-size: 100%;
+    font-size: 5vw;
     margin-bottom: 20px;
     font-weight: 700;
   }
@@ -174,23 +175,28 @@ body {
 
   }
 
-  .bonus {
-    animation: piscaCor 1s infinite;
-  }
-
+  /* Animação de troca de cor */
   @keyframes piscaCor {
     0% {
-      color: var(--cor1);
+      color: red;
     }
 
-    50% {
+    33% {
       color: green;
     }
 
-    100% {
+    66% {
       color: blue;
     }
 
+    100% {
+      color: red;
+    }
+  }
+
+  /* Aplicando a animação no texto */
+  p#bonus {
+    animation: piscaCor 1.5s infinite;
   }
 
   /* ======= BOTÃO CTA ======= */
@@ -366,10 +372,11 @@ body {
     background-color: var(--cor1);
     text-align: center;
     margin-bottom: -20px;
-    font-size: 1.5vh;
+    font-size: 2.5vw;
     color: white;
     user-select: none;
-    margin-bottom: 20px;
+    padding: 5px 0;
+
   }
 }
 
