@@ -40,7 +40,7 @@ body {
   }
 
   .hero h2 {
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     font-weight: 500px;
     color: var(--cor1);
     margin-top: -10px;
@@ -48,13 +48,12 @@ body {
   }
 
   #imagem {
-    background-image: url(imagens/bebe-fofo-com-brinquedo-de-pelucia.jpg);
+    position: relative;
+    background-image: url(imagens/bebe.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 20% 0px;
-    margin: 0;
-
+    background-attachment: fixed;
+    background-position: bottom center;
+    padding: 25vw;
   }
 
   /* ======= SEÇÃO "PARA QUEM É" ======= */
@@ -195,7 +194,7 @@ body {
   }
 
   /* Aplicando a animação no texto */
-  p#bonus {
+  #bonus {
     animation: piscaCor 1.5s infinite;
   }
 
@@ -301,6 +300,7 @@ body {
     margin: 20px 0 0 0;
     font-weight: 700;
     text-align: center;
+    text-shadow: 1px 1px 1px black;
   }
 
   .depoimento-prints {
@@ -369,11 +369,11 @@ body {
 
   /* ======= FOOTER ======= */
   footer {
-    background-color: var(--cor1);
+    background-color: var(--cor5);
     text-align: center;
     margin-bottom: -20px;
     font-size: 2.5vw;
-    color: white;
+    color: black;
     user-select: none;
     padding: 5px 0;
 
@@ -382,11 +382,11 @@ body {
 
 footer a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 footer a:hover {
   text-decoration: underline;
-  color: var(--cor2);
+  color: var(--cor1);
   font-weight: bolder var(--cor1);
 }
