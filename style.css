@@ -1,16 +1,16 @@
 /* Reset básico */
 * {
-  margin:  auto;
+  margin: auto;
   padding: auto;
   box-sizing: border-box;
 }
 
-:root{
+:root {
   --cor1: #1a3d7c;
   --cor2: #2e7d32;
   --cor3: #6a4caf;
-  --cor4:#00897b;
-  --cor5:#FFEEF2;
+  --cor4: #00897b;
+  --cor5: #FFEEF2;
 }
 
 
@@ -20,326 +20,373 @@ body {
   line-height: 1.6;
   padding: 0px;
   font-size: 18px;
-  background-image: url(imagens/6664.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-  
-/* ======= HEADER HERO ======= */
-.hero {
-  padding: 10px 15px;
-  text-align: center;
-  background-color: white;
-  margin: 10% 3%;
-  border-radius: 10px;
-}
+  background-image: linear-gradient(to left, #ffffff70, hsl(216, 100%, 70%));
 
-.hero h1 {
-  font-size: 115%;
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-style: italic;
-  background-color: white;
-  border-radius: 10px;
-  color: #1a3d7c;
-}
-.hero h2 {
-  font-size: 100%;
-  font-weight: 500px;
-  color: var(--cor2);
-  margin-top: -10px;
-  margin-bottom: 0px;
-}
+  /* ======= HEADER HERO ======= */
+  .hero {
+    padding: 30px 15px 5px;
+    text-align: center;
+    background-color: white;
+  }
 
-/* ======= SEÇÃO "PARA QUEM É" ======= */
-.publico-alvo {
-  background-color: #fdfdfd;
-  width: auto;
-  margin: 10% 3% 5%;
-  padding: 20px;
-  border: 1px solid var(--cor1);
-  border-radius: 10px;
-  text-align: center;
-}
+  .hero h1 {
+    font-variant: small-caps;
+    font-size: 6vw;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-style: italic;
+    border-radius: 10px;
+    color: #1a3d7c;
+  }
 
-.publico-alvo h2 {
-  color: var(--cor1);
-  font-size: 100%;
-  margin-bottom: 20px;
-  font-weight: 700;
-}
+  .hero h2 {
+    font-size: 2.5vw;
+    font-weight: 500px;
+    color: var(--cor1);
+    margin-top: -10px;
+    margin-bottom: 0px;
+  }
 
-.publico-alvo ul {
-  list-style: none;
-  padding-left: 0;
-  text-align: left;
-  max-width: 700px;
-  margin: auto;
-}
+  #imagem {
+    background-image: url(imagens/bebe-fofo-com-brinquedo-de-pelucia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20% 0px;
+    margin: 0;
 
-.publico-alvo ul li {
-  position: relative;
-  padding-left: 40px;
-  margin-bottom: 0px;
-  font-size: 80%;
-  font-style: italic;
-  color: #264653;
-}
+  }
 
-.publico-alvo ul li::before {
-  content: "✔️";
-  position: absolute;
-  left: 0;
-  top: 4px;
-  font-size: 1.4rem;
-  line-height: 1;
-}
+  /* ======= SEÇÃO "PARA QUEM É" ======= */
+  .publico-alvo {
+    background-color: #fdfdfd70;
+    width: auto;
+    margin: 5% 3% 5%;
+    padding: 20px;
+    box-shadow: 1px 1px 1px #fdfdfd70;
+    border: 1px solid #fdfdfd70;
+    border-radius: 10px;
+    text-align: center;
+  }
 
-/* ======= SEÇÃO "O QUE INCLUI" ======= */
-.o-que-inclui {
-  background-color:white;
-  color: var(--cor1); 
-  max-width: auto;
-  margin: 0 auto 60px;
-  padding: 20px;
-  border-radius: 12px;
-  border: solid 1px var(--cor1);
-  margin: 5% 3% 15%;
-}
+  .publico-alvo h2 {
+    color: var(--cor1);
+    font-size: 5vw;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
 
-.o-que-inclui .intro {
-  color: var(--cor1);
-  font-size: 100%;
-  text-align: justify;
-  line-height: 1.5;
-  border: black;
-}
+  .publico-alvo ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+    max-width: 700px;
+    margin: auto;
+  }
 
-.o-que-inclui h2 {
-  font-size: 120%;
-  margin: 10px 0 10px 0;
-  font-weight: 700;
-  color: var(--cor1);
-  text-align: center;
-}
+  .publico-alvo ul li {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 0px;
+    font-size: 80%;
+    font-style: italic;
+    color: #264653;
+  }
 
-.o-que-inclui ul {
-  list-style: none;
-  padding-left: 0;
-  max-width: 700px;
-  text-align: left;}
+  .publico-alvo ul li::before {
+    content: "✔️";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    font-size: 1.4rem;
+    line-height: 1;
+  }
 
-.o-que-inclui li {
-  position: relative;
-  padding-left: 40px;
-  margin-bottom: 20px;
-  font-size: 85%;
-  font-weight: 600;
-  font-style: italic;;
-  line-height: 1.7;
-  color: #264653;
-}
+  /* ======= SEÇÃO "O QUE INCLUI" ======= */
+  .o-que-inclui {
+    background-color: #fdfdfd70;
+    color: var(--cor1);
+    max-width: auto;
+    margin: 0 auto 60px;
+    padding: 20px;
+    border-radius: 12px;
+    border: solid 1px #fdfdfd70;
+    margin: 5% 3% 15%;
+  }
 
-.o-que-inclui li::before {
-  content: "✔️";
-  position: absolute;
-  left: 0;
-  top: 4px;
-  font-size: 1.4rem;
-  line-height: 1;
-}
+  .o-que-inclui .intro {
+    color: var(--cor1);
+    font-size: 100%;
+    text-align: justify;
+    line-height: 1.5;
+    border: black;
+  }
 
-.bonus{
-  font-size: 90%;
-  text-align: center;
-  padding: 0 15px;
-  max-width: 100%;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  hyphens: auto;
-  font-weight: bolder;
-}
-div img{
-  display: flex;
+  .o-que-inclui h2 {
+    font-size: 120%;
+    margin: 10px 0 10px 0;
+    font-weight: 700;
+    color: var(--cor1);
+    text-align: center;
+  }
 
-}
+  .o-que-inclui ul {
+    list-style: none;
+    padding-left: 0;
+    max-width: 700px;
+    text-align: left;
+  }
 
-.bonus {
-  animation: piscaCor 1s infinite;
-}
+  .o-que-inclui li {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    font-size: 85%;
+    font-weight: 600;
+    font-style: italic;
+    ;
+    line-height: 1.7;
+    color: #264653;
+  }
 
-@keyframes piscaCor {
-  0%   { color: var(--cor1); }
-  50%  { color: green; }
-  100% { color: blue; }
+  .o-que-inclui li::before {
+    content: "✔️";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    font-size: 1.4rem;
+    line-height: 1;
+  }
 
-}
+  .bonus {
+    font-size: 90%;
+    text-align: center;
+    padding: 0 15px;
+    max-width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    font-weight: bolder;
+  }
 
-/* ======= BOTÃO CTA ======= */
-.cta-button {
-  display: block;
-  max-width: 320px;
-  margin-bottom: 20px;
-  background-color: #075e54; /* verde escuro */
-  color: #F5F1ED;
-  font-weight: 700;
-  padding: 10px 0;
-  border-radius: 30px;
-  font-size: 1.5rem;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
+  div img {
+    display: flex;
 
-.cta-button:hover,
-.cta-button:focus {
-  background-color: #1b2f33;
-  outline: none; }
+  }
+
+  /* Animação de troca de cor */
+  @keyframes piscaCor {
+    0% {
+      color: red;
+    }
+
+    33% {
+      color: green;
+    }
+
+    66% {
+      color: blue;
+    }
+
+    100% {
+      color: red;
+    }
+  }
+
+  /* Aplicando a animação no texto */
+  p#bonus {
+    animation: piscaCor 1.5s infinite;
+  }
+
+  /* ======= BOTÃO CTA ======= */
+  .cta-button {
+    display: block;
+    max-width: 320px;
+    margin-bottom: 20px;
+    background-color: #075e54;
+    /* verde escuro */
+    color: #F5F1ED;
+    font-weight: 700;
+    padding: 10px 0;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-button:hover,
+  .cta-button:focus {
+    background-color: #1b2f33;
+    outline: none;
+  }
 
   .cta-button1 {
-  display: block;
-  max-width: 320px;
-  margin-top: -40px;
-  background-color: #075e54; /* verde escuro */
-  color: #F5F1ED;
-  font-weight: 700;
-  padding: 10px 0;
-  border-radius: 30px;
-  font-size: 1.5rem;
+    display: block;
+    max-width: 320px;
+    margin-top: -40px;
+    background-color: #075e54;
+    /* verde escuro */
+    color: #F5F1ED;
+    font-weight: 700;
+    padding: 10px 0;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-button1:hover,
+  .cta-button1:focus {
+    background-color: #1b2f33;
+    outline: none;
+  }
+
+  .cta-button2 {
+    display: block;
+    max-width: 320px;
+    margin-top: 10px;
+    background-color: #075e54;
+    /* verde escuro */
+    color: #F5F1ED;
+    font-weight: 700;
+    padding: 10px 0;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-button2:hover,
+  .cta-button2:focus {
+    background-color: #1b2f33;
+    outline: none;
+  }
+
+  .cta-button3 {
+    display: block;
+    max-width: 320px;
+    margin-bottom: 10px;
+    background-color: #075e54;
+    /* verde escuro */
+    color: #F5F1ED;
+    font-weight: 700;
+    padding: 10px 0;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-button3:hover,
+  .cta-button3:focus {
+    background-color: #1b2f33;
+    outline: none;
+  }
+
+
+  /* ======= DEPOIMENTOS ======= */
+
+  .depoimentos h2 {
+    font-size: 100%;
+    color: var(--cor5);
+    margin: 20px 0 0 0;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .depoimento-prints {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .depoimentos img {
+    max-width: 100%;
+    max-height: 500px;
+    border-radius: 50px 10px 10px 50px;
+    padding: 10px 10px 10px 10px;
+    transition: transform 0, 3 ease;
+  }
+
+  /* ======= QUEM É LARA ======= */
+  .quem-e-lara {
+    background-color: #F1E6DE;
+    width: auto;
+    margin: 20px 10px 10px;
+    padding: 0 0 -100%;
+    border-radius: 12px;
+    text-align: center;
+
+  }
+
+  .quem-e-lara h2 {
+    font-size: 150%;
+    color: #264653;
+    margin-bottom: auto;
+    font-weight: 700;
+  }
+
+  .quem-e-lara .bio {
+    display: flex;
+    flex-direction: column;
+    /* empilha tudo em coluna */
+    align-items: center;
+    text-align: center;
+    text-align: justify;
+  }
+
+  .quem-e-lara .foto-lara {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0px;
+    box-shadow: 0 4px 12px rgba(38, 70, 83, 0.15);
+  }
+
+  .quem-e-lara p {
+    flex: 1 1 400px;
+    font-size: 1.4rem;
+    color: #264653;
+    line-height: 1.8;
+    text-align: justify;
+    padding: 0 5%;
+  }
+
+
+  /* ======= FOOTER ======= */
+  footer {
+    background-color: var(--cor1);
+    text-align: center;
+    margin-bottom: -20px;
+    font-size: 2.5vw;
+    color: white;
+    user-select: none;
+    padding: 5px 0;
+
+  }
+}
+
+footer a {
   text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  color: white;
 }
 
-.cta-button1:hover,
-.cta-button1:focus {
-  background-color: #1b2f33;
-  outline: none; }
-
-   .cta-button2 {
-  display: block;
-  max-width: 320px;
-  margin-top: 10px;
-  background-color: #075e54; /* verde escuro */
-  color: #F5F1ED;
-  font-weight: 700;
-  padding: 10px 0;
-  border-radius: 30px;
-  font-size: 1.5rem;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+footer a:hover {
+  text-decoration: underline;
+  color: var(--cor2);
+  font-weight: bolder var(--cor1);
 }
-
-.cta-button2:hover,
-.cta-button2:focus {
-  background-color: #1b2f33;
-  outline: none; }
-
-   .cta-button3 {
-  display: block;
-  max-width: 320px;
-  margin-bottom: 10px;
-  background-color: #075e54; /* verde escuro */
-  color: #F5F1ED;
-  font-weight: 700;
-  padding: 10px 0;
-  border-radius: 30px;
-  font-size: 1.5rem;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.cta-button3:hover,
-.cta-button3:focus {
-  background-color: #1b2f33;
-  outline: none; }
-
-
-/* ======= DEPOIMENTOS ======= */
-
-.depoimentos h2 {
-  font-size: 100%;
-  color: var(--cor5);
-  margin: 20px 0 0 0;
-  font-weight: 700;
-  text-align: center;}
-
-.depoimento-prints{
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  padding: 20px 0;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-}
-
-.depoimentos img{
-  max-width: 100%;
-  max-height: 500px;
-  border-radius: 50px 10px 10px 50px;
-  padding: 10px 10px 10px 10px;
-  transition: transform 0,3 ease;
-}  
-/* ======= QUEM É LARA ======= */
-.quem-e-lara {
-  background-color: #F1E6DE;
-  width: auto;
-  margin: 20px 10px 10px;
-  padding: 0 0 -100%;
-  border-radius: 12px;
-  text-align: center;
-  
-}
-
-.quem-e-lara h2 {
-  font-size: 150%;
-  color: #264653;
-  margin-bottom: auto;
-  font-weight: 700;
-}
-
-.quem-e-lara .bio {
-  display: flex;
-  flex-direction: column; /* empilha tudo em coluna */
-  align-items: center;
-  text-align: center;
-  text-align: justify;
-}
-
-.quem-e-lara .foto-lara {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 0px;
-  box-shadow: 0 4px 12px rgba(38, 70, 83, 0.15);
-}
-.quem-e-lara p {
-  flex: 1 1 400px;
-  font-size: 1.4rem;
-  color: #264653;
-  line-height: 1.8;
-  text-align: justify;
-  padding: 0 5%;
-}
-
-
-/* ======= FOOTER ======= */
-footer {
-  text-align: center;
-  margin-bottom: -20px;
-  font-size: 50%;
-  color: black;
-  user-select: none;
-  margin-bottom: 20px;
-}
-
