@@ -49,11 +49,10 @@ body {
 
   #imagem {
     position: relative;
-    background-image: url(imagens/bebe.jpg);
+    background-image: url(imagens/bebe\ \(1\).jpg);
     background-size: cover;
-    background-attachment: fixed;
-    background-position: bottom center;
-    padding: 25vw;
+    padding: 10%;
+    color: #00897b00;
   }
 
   /* ======= SEÇÃO "PARA QUEM É" ======= */
