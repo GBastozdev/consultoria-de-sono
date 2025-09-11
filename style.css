@@ -59,7 +59,7 @@ body {
   .publico-alvo {
     background-color: #fdfdfd70;
     width: auto;
-    margin: 5% 3% 5%;
+    margin: 5% 3% 2%;
     padding: 20px;
     box-shadow: 1px 1px 1px #fdfdfd70;
     border: 1px solid #fdfdfd70;
@@ -350,6 +350,7 @@ footer a:hover {
   font-weight: bolder var(--cor1);
 
 }
+
 
 
 
