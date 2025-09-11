@@ -155,52 +155,7 @@ body {
     font-size: 1.4rem;
     line-height: 1;
   }
-
-  .bonus {
-    font-size: 90%;
-    text-align: center;
-    padding: 0 15px;
-    max-width: 100%;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    hyphens: auto;
-    font-weight: bolder;
-  }
-
-  .bonus img {
-    padding-top: 10px;
-  }
-
-  .bonus {
-    animation: piscaCor 1.5s infinite;
-  }
-}
-
-/* Animação de troca de cor */
-@keyframes piscaCor {
-  0% {
-    color: red;
-  }
-
-  33% {
-    color: green;
-  }
-
-  66% {
-    color: blue;
-  }
-
-  100% {
-    color: red;
-  }
-}
-
-/* Aplicando a animação no texto */
-.bonus {
-  animation: piscaCor 1.5s infinite;
-}
-
+  
 /* ======= BOTÃO CTA ======= */
 .cta-button {
   display: block;
@@ -393,4 +348,5 @@ footer a:hover {
   text-decoration: underline;
   color: var(--cor1);
   font-weight: bolder var(--cor1);
+
 }
