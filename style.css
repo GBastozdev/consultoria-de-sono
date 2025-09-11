@@ -168,215 +168,220 @@ body {
     font-weight: bolder;
   }
 
-  div img {
-    display: flex;
-
+  .bonus img {
+    padding-top: 10px;
   }
 
-  /* Animação de troca de cor */
-  @keyframes piscaCor {
-    0% {
-      color: red;
-    }
-
-    33% {
-      color: green;
-    }
-
-    66% {
-      color: blue;
-    }
-
-    100% {
-      color: red;
-    }
-  }
-
-  /* Aplicando a animação no texto */
-  #bonus {
+  .bonus {
     animation: piscaCor 1.5s infinite;
   }
+}
 
-  /* ======= BOTÃO CTA ======= */
-  .cta-button {
-    display: block;
-    max-width: 320px;
-    margin-bottom: 20px;
-    background-color: #075e54;
-    /* verde escuro */
-    color: #F5F1ED;
-    font-weight: 700;
-    padding: 10px 0;
-    border-radius: 30px;
-    font-size: 1.5rem;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+/* Animação de troca de cor */
+@keyframes piscaCor {
+  0% {
+    color: red;
   }
 
-  .cta-button:hover,
-  .cta-button:focus {
-    background-color: #1b2f33;
-    outline: none;
+  33% {
+    color: green;
   }
 
-  .cta-button1 {
-    display: block;
-    max-width: 320px;
-    margin-top: -40px;
-    background-color: #075e54;
-    /* verde escuro */
-    color: #F5F1ED;
-    font-weight: 700;
-    padding: 10px 0;
-    border-radius: 30px;
-    font-size: 1.5rem;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  66% {
+    color: blue;
   }
 
-  .cta-button1:hover,
-  .cta-button1:focus {
-    background-color: #1b2f33;
-    outline: none;
+  100% {
+    color: red;
   }
+}
 
-  .cta-button2 {
-    display: block;
-    max-width: 320px;
-    margin-top: 10px;
-    background-color: #075e54;
-    /* verde escuro */
-    color: #F5F1ED;
-    font-weight: 700;
-    padding: 10px 0;
-    border-radius: 30px;
-    font-size: 1.5rem;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+/* Aplicando a animação no texto */
+.bonus {
+  animation: piscaCor 1.5s infinite;
+}
 
-  .cta-button2:hover,
-  .cta-button2:focus {
-    background-color: #1b2f33;
-    outline: none;
-  }
+/* ======= BOTÃO CTA ======= */
+.cta-button {
+  display: block;
+  max-width: 320px;
+  margin-bottom: 20px;
+  background-color: #075e54;
+  /* verde escuro */
+  color: #F5F1ED;
+  font-weight: 700;
+  padding: 10px 0;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-  .cta-button3 {
-    display: block;
-    max-width: 320px;
-    margin-bottom: 10px;
-    background-color: #075e54;
-    /* verde escuro */
-    color: #F5F1ED;
-    font-weight: 700;
-    padding: 10px 0;
-    border-radius: 30px;
-    font-size: 1.5rem;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+.cta-button:hover,
+.cta-button:focus {
+  background-color: #1b2f33;
+  outline: none;
+}
 
-  .cta-button3:hover,
-  .cta-button3:focus {
-    background-color: #1b2f33;
-    outline: none;
-  }
+.cta-button1 {
+  display: block;
+  max-width: 320px;
+  margin-top: -40px;
+  background-color: #075e54;
+  /* verde escuro */
+  color: #F5F1ED;
+  font-weight: 700;
+  padding: 10px 0;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
+.cta-button1:hover,
+.cta-button1:focus {
+  background-color: #1b2f33;
+  outline: none;
+}
 
-  /* ======= DEPOIMENTOS ======= */
+.cta-button2 {
+  display: block;
+  max-width: 320px;
+  margin-top: 10px;
+  background-color: #075e54;
+  /* verde escuro */
+  color: #F5F1ED;
+  font-weight: 700;
+  padding: 10px 0;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-  .depoimentos h2 {
-    font-size: 100%;
-    color: var(--cor5);
-    margin: 20px 0 0 0;
-    font-weight: 700;
-    text-align: center;
-    text-shadow: 1px 1px 1px black;
-  }
+.cta-button2:hover,
+.cta-button2:focus {
+  background-color: #1b2f33;
+  outline: none;
+}
 
-  .depoimento-prints {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding: 20px 0;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-  }
+.cta-button3 {
+  display: block;
+  max-width: 320px;
+  margin-bottom: 10px;
+  background-color: #075e54;
+  /* verde escuro */
+  color: #F5F1ED;
+  font-weight: 700;
+  padding: 10px 0;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-  .depoimentos img {
-    max-width: 100%;
-    max-height: 500px;
-    border-radius: 50px 10px 10px 50px;
-    padding: 10px 10px 10px 10px;
-    transition: transform 0, 3 ease;
-  }
-
-  /* ======= QUEM É LARA ======= */
-  .quem-e-lara {
-    background-color: #F1E6DE;
-    width: auto;
-    margin: 20px 10px 10px;
-    padding: 0 0 -100%;
-    border-radius: 12px;
-    text-align: center;
-
-  }
-
-  .quem-e-lara h2 {
-    font-size: 150%;
-    color: #264653;
-    margin-bottom: auto;
-    font-weight: 700;
-  }
-
-  .quem-e-lara .bio {
-    display: flex;
-    flex-direction: column;
-    /* empilha tudo em coluna */
-    align-items: center;
-    text-align: center;
-    text-align: justify;
-  }
-
-  .quem-e-lara .foto-lara {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 0px;
-    box-shadow: 0 4px 12px rgba(38, 70, 83, 0.15);
-  }
-
-  .quem-e-lara p {
-    flex: 1 1 400px;
-    font-size: 1.4rem;
-    color: #264653;
-    line-height: 1.8;
-    text-align: justify;
-    padding: 0 5%;
-  }
+.cta-button3:hover,
+.cta-button3:focus {
+  background-color: #1b2f33;
+  outline: none;
+}
 
 
-  /* ======= FOOTER ======= */
-  footer {
-    background-color: var(--cor5);
-    text-align: center;
-    margin-bottom: -20px;
-    font-size: 2.5vw;
-    color: black;
-    user-select: none;
-    padding: 5px 0;
+/* ======= DEPOIMENTOS ======= */
 
-  }
+.depoimentos h2 {
+  font-size: 120%;
+  color: #333;
+  margin: 20px 0 0 0;
+  font-weight: 700;
+  text-align: center;
+
+}
+
+.depoimento-prints {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 20px 0;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+
+}
+
+.depoimentos img {
+  max-width: 100%;
+  max-height: 600px;
+  border-radius: 50px;
+  padding: 10px 10px 10px 10px;
+  transition: transform 0, 3 ease;
+}
+
+/* ======= QUEM É LARA ======= */
+.quem-e-lara {
+  background-color: #F1E6DE;
+  width: auto;
+  margin: 20px 10px 10px;
+  padding: 0 0 -100%;
+  border-radius: 12px;
+  text-align: center;
+
+}
+
+.quem-e-lara h2 {
+  font-size: 150%;
+  color: #264653;
+  margin-bottom: auto;
+  font-weight: 700;
+}
+
+.quem-e-lara .bio {
+  display: flex;
+  flex-direction: column;
+  /* empilha tudo em coluna */
+  align-items: center;
+  text-align: center;
+  text-align: justify;
+}
+
+.quem-e-lara .foto-lara {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0px;
+  box-shadow: 0 4px 12px rgba(38, 70, 83, 0.15);
+}
+
+.quem-e-lara p {
+  flex: 1 1 400px;
+  font-size: 1.4rem;
+  color: #264653;
+  line-height: 1.8;
+  text-align: justify;
+  padding: 0 5%;
+}
+
+
+/* ======= FOOTER ======= */
+footer {
+  background-color: var(--cor5);
+  text-align: center;
+  margin-bottom: -20px;
+  font-size: 2.5vw;
+  color: black;
+  user-select: none;
+  padding: 5px 0;
+
+}
 }
 
 footer a {
