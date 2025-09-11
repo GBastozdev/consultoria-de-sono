@@ -109,7 +109,7 @@ body {
     padding: 20px;
     border-radius: 12px;
     border: solid 1px #fdfdfd70;
-    margin: 5% 3% 15%;
+    margin: 5% 3% 5%;
   }
 
   .o-que-inclui .intro {
@@ -350,3 +350,4 @@ footer a:hover {
   font-weight: bolder var(--cor1);
 
 }
+
