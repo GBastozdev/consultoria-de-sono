@@ -109,7 +109,7 @@ body {
     padding: 20px;
     border-radius: 12px;
     border: solid 1px #fdfdfd70;
-    margin: 5% 3% 10%;
+    margin: 5% 3% 15%;
   }
 
   .o-que-inclui .intro {
@@ -160,7 +160,7 @@ body {
 .cta-button {
   display: block;
   max-width: 320px;
-  margin-top: 2%;
+  margin-top: 3%;
   background-color: #075e54;
   /* verde escuro */
   color: #F5F1ED;
