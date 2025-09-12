@@ -160,7 +160,7 @@ body {
 .cta-button {
   display: block;
   max-width: 320px;
-  margin-bottom: 0;
+  margin-top: 10px;
   background-color: #075e54;
   /* verde escuro */
   color: #F5F1ED;
